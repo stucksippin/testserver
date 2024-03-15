@@ -1,4 +1,4 @@
-export async function POST(req) {
+export async function GET(req) {
     const resp = await req.json()
     console.log('-------------');
     console.log(resp);
