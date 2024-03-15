@@ -1,6 +1,5 @@
-export async function GET(req) {
+export async function POST(req) {
     const resp = await req.json()
-    console.log('-------------');
     console.log(resp);
 
     return Response.json(resp, {
