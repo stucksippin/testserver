@@ -1,8 +1,8 @@
-export async function POST(req) {
-    const resp = await req.json()
-    console.log(resp);
+export async function GET(request) {
+    const { searchParams } = new URL(request.url)
+    console.log(searchParams);
 
-    return Response.json(resp, {
+    return Response.json({}, {
         status: 200,
         headers: {
             'Access-Control-Allow-Origin': '*',
